@@ -2,9 +2,7 @@
   <v-app>
     <v-app-bar fixed app>
       <v-toolbar-title>
-        <router-link to="/" style="text-decoration: none;color:black"
-          >BitSong Portal</router-link
-        >
+        <router-link to="/" style="text-decoration: none;color:black">BitSong Portal</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items v-if="!loggedin">
@@ -12,8 +10,8 @@
       </v-toolbar-items>
       <v-toolbar-items v-else>
         <v-btn text to="/artists">Artists</v-btn>
-        <v-btn text>Albums</v-btn>
-        <v-btn text>Tracks</v-btn>
+        <v-btn text to="/albums">Albums</v-btn>
+        <v-btn text to="/tracks">Tracks</v-btn>
         <v-btn text to="/proposals">Proposals</v-btn>
       </v-toolbar-items>
       <v-btn icon v-if="loggedin">
